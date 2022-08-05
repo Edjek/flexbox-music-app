@@ -1,0 +1,30 @@
+.nav-link {
+    text-decoration: none;
+    color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .game {
+        margin: 0 0 40px 0;
+    }
+
+    .practice form textarea {
+        font-size: 15px;
+    }
+
+    .result {
+        background-size: 20vw;
+        border-radius: 20px;
+        background-position: top 2vw right 2vw;
+    }
+
+    .result .vinyl {
+        width: 14vw;
+        height: 14vw;
+        margin: 3vw 6.7vw 0 2vw;
+    }
+}
