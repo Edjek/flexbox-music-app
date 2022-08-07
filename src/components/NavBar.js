@@ -1,7 +1,14 @@
+import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Context from '../Context';
 import '../styles/NavBar.css';
 
-const NavBar = ({ page }) => {
+const NavBar = () => {
+    const { page, setPage } = useContext(Context);
+    useEffect(() => {
+        setPage(+1);
+    });
+
     return (
         <nav>
             <h1>

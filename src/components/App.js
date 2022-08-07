@@ -9,8 +9,10 @@ function App() {
     const Provider = Context.Provider;
     const [result, setResult] = useState('');
     const [vinyl, setVinyl] = useState('');
+    const [page, setPage] = useState(1);
+
     return (
-        <Provider value={{ result, setResult, vinyl, setVinyl }}>
+        <Provider value={{ result, setResult, vinyl, setVinyl, page, setPage }}>
             <Router>
                 <div>
                     <Routes>

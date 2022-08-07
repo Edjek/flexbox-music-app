@@ -3,10 +3,10 @@ import Rules from './Rules';
 import Practice from './Practice';
 import '../styles/Game.css';
 
-const Game = ({ page }) => {
+const Game = () => {
     return (
         <div className="game">
-            <NavBar page={page} />
+            <NavBar />
             <Rules />
             <Practice />
         </div>

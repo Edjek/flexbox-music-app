@@ -1,14 +1,13 @@
 import Game from './Game';
 import Result from './Result';
-import '../styles/Flexbox.css';
 
-let Flexbox = () => {
+const Page = () => {
     return (
         <section className="container">
-            <Game page={1} />
+            <Game />
             <Result />
         </section>
     );
 };
 
-export default Flexbox;
+export default Page;
