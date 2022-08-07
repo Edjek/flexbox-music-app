@@ -1,7 +1,6 @@
 import NavBar from './NavBar';
 import Rules from './Rules';
 import Practice from './Practice';
-import '../styles/Game.css';
 
 const Game = () => {
     return (

@@ -2,29 +2,27 @@
     display: flex;
     border-radius: 5px;
     overflow: hidden;
-}
-
-.practice.no {
-    -webkit-animation: no 1s ease-in-out;
-    animation: no 1s ease-in-out;
+    &.no {
+        -webkit-animation: no 1s ease-in-out;
+        animation: no 1s ease-in-out;
+    }
 }
 
 .aside {
     background-color: var(--aside);
     padding: 15px 10px;
-}
 
-.aside ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
-.aside ul li {
-    list-style: none;
-    line-height: 1.5;
+        li {
+            list-style: none;
+            line-height: 1.5;
+        }
+    }
 }
-
 .practice form {
     flex: 1;
     display: flex;
@@ -35,18 +33,18 @@
     background-color: var(--form);
     border: 2px solid rgba(255, 255, 255, 0.224);
     color: #333;
-}
 
-.practice form .response {
-    width: 95%;
-}
+    .response {
+        width: 95%;
 
-.response .m2 {
-    margin-left: 5%;
-}
+        .m2 {
+            margin-left: 5%;
+        }
 
-.response p {
-    margin-bottom: 2px;
+        p {
+            margin-bottom: 2px;
+        }
+    }
 }
 
 .practice form textarea {
@@ -57,10 +55,10 @@
     border: none;
     font-size: 18px;
     color: #222;
-}
 
-.practice form textarea:focus {
-    outline: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 .practice form [type='submit'] {
@@ -138,14 +136,14 @@
     40%,
     60%,
     80% {
-        transform: rotate(3deg) scale(1.2);
+        transform: rotate(3deg) scale(1.1);
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-        transform: rotate(-3deg) scale(1.2);
+        transform: rotate(-3deg) scale(1.1);
     }
 }
 
@@ -186,39 +184,5 @@
     70%,
     90% {
         transform: translateX(-10px);
-    }
-}
-
-@-webkit-keyframes play {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes play {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes music {
-    0% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-120px, -60px);
-        opacity: 0;
-    }
-}
-
-@keyframes music {
-    0% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-120px, -60px);
-        opacity: 0;
     }
 }

@@ -1,6 +1,5 @@
-import Game from './Game';
-import Result from './Result';
-import '../styles/Flexbox.css';
+import Game from '../components/Game';
+import Result from '../components/Result';
 
 const Flexbox = () => {
     return (

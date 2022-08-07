@@ -1,7 +1,6 @@
 import React, { useContext, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Context from '../Context';
-import '../styles/Practice.css';
 
 const Practice = () => {
     const { result, vinyl } = useContext(Context);

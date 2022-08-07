@@ -1,7 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Context from '../Context';
-import '../styles/NavBar.css';
 
 const NavBar = () => {
     const { page, setPage } = useContext(Context);

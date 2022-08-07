@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Context from '../Context';
-import Flexbox from './Flexbox';
-import Page from './Page';
-import '../styles/App.css';
+import Context from './Context';
+import Flexbox from './pages/Flexbox';
+import Page from './components/Page';
+import './styles/index.scss';
 
 function App() {
     const Provider = Context.Provider;

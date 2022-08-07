@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useRef } from 'react';
 import Context from '../Context';
-import '../styles/Result.css';
 import vinyle from '../assets/img/vinyle.png';
 import musicalNote from '../assets/img/music-note.png';
 
