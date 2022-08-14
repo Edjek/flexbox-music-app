@@ -3,7 +3,6 @@
     border-radius: 5px;
     overflow: hidden;
     &.no {
-        -webkit-animation: no 1s ease-in-out;
         animation: no 1s ease-in-out;
     }
 }
@@ -23,6 +22,7 @@
         }
     }
 }
+
 .practice form {
     flex: 1;
     display: flex;
@@ -42,7 +42,7 @@
         }
 
         p {
-            margin-bottom: 2px;
+            margin-bottom: 1px;
         }
     }
 }
@@ -76,24 +76,11 @@
     color: #222;
     background-color: var(--btn-active);
     box-shadow: 3px 3px 6px rgba(51, 51, 51, 0.2);
-    -webkit-animation: pulse 2s ease-in-out infinite both;
     animation: pulse 2s ease-in-out infinite both;
 }
 
 .practice form [type='submit'].okay {
-    -webkit-animation: okay 1s ease-in-out;
     animation: okay 1s ease-in-out;
-}
-
-@-webkit-keyframes pulse {
-    0%,
-    100% {
-        transform: scale(1.03);
-    }
-
-    50% {
-        transform: scale(0.97);
-    }
 }
 
 @keyframes pulse {
@@ -104,26 +91,6 @@
 
     50% {
         transform: scale(0.97);
-    }
-}
-
-@-webkit-keyframes okay {
-    0%,
-    100% {
-        transform: translateX(0) scale(1);
-    }
-    20%,
-    40%,
-    60%,
-    80% {
-        transform: rotate(3deg) scale(1.2);
-    }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        transform: rotate(-3deg) scale(1.2);
     }
 }
 
@@ -144,26 +111,6 @@
     70%,
     90% {
         transform: rotate(-3deg) scale(1.1);
-    }
-}
-
-@-webkit-keyframes no {
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-    20%,
-    40%,
-    60%,
-    80% {
-        transform: translateX(10px);
-    }
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        transform: translateX(-10px);
     }
 }
 
